@@ -14,6 +14,18 @@ import {
   Menu,
   X,
 } from "lucide-react";
+/* =================== Responsive Styles ===================
+  All main containers use max-w-6xl and px-4/sm:px-6/lg:px-8 for horizontal padding.
+  All grids use grid-cols-1 for mobile, md:grid-cols-2 or lg:grid-cols-2/3 for desktop.
+  All text sizes use responsive classes (e.g., text-3xl sm:text-4xl).
+  All spacings use responsive classes (e.g., py-20, mb-16).
+  All images/icons use w-full/h-full or fixed sizes with responsive containers.
+  All absolute/fixed elements use translate/position utilities for mobile/desktop.
+  All flex layouts use flex-col for mobile, flex-row for desktop (with md/lg: prefixes).
+  All overflow/rounded/shadow/blur classes are mobile-friendly.
+  All buttons/inputs use w-full for mobile, auto for desktop.
+  All hover/transition/animation classes are mobile-safe.
+*/
 import defaultProfile from "./assets/profile.jpg"; // <- your bundled image
 
 /* ======================= IndexedDB helpers (Blob storage) ======================= */
@@ -628,9 +640,7 @@ const Portfolio = () => {
                           removePhoto();
                         }}
                         className="text-xs text-red-600 hover:text-red-700 underline"
-                      >
-                        Remove photo
-                      </button>
+                      ></button>
                     ) : (
                       <p className="text-xs text-gray-600 mt-2"></p>
                     )}
@@ -2416,9 +2426,7 @@ const Portfolio = () => {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-400">
-            © 2025 Shanthan Reddy Nandhi. Built with React.js and Tailwind CSS.
-          </p>
+          <p className="text-gray-400">© 2025 Shanthan Reddy Nandhi.</p>
         </div>
       </footer>
     </div>
