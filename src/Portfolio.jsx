@@ -627,7 +627,7 @@ const Portfolio = () => {
                         </span>
                       </div>
                     )}
-                    // (Removed hover overlay and "Change Photo" text)
+                  
                   </div>
 
                   {/* Actions / error under circle */}
@@ -1120,7 +1120,7 @@ const Portfolio = () => {
                 <div className="space-y-3">
                   {project.achievements.map((ach, idx) => (
                     <div key={idx} className="flex items-start">
-                      <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to紫-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {ach}
                       </p>
@@ -2259,9 +2259,9 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to紫-600 rounded-xl flex items-center justify-center mr-4">
-                    <Linkedin className="w-6 h-6 text白" />
+               <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+    <Linkedin className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">LinkedIn</h4>
