@@ -26,7 +26,7 @@ import {
   All buttons/inputs use w-full for mobile, auto for desktop.
   All hover/transition/animation classes are mobile-safe.
 */
-import defaultProfile from "./assets/profile.jpg"; // <- your bundled image
+import defaultProfile from "./assets/profilenew.jpg"; // <- your bundled image
 
 /* ======================= IndexedDB helpers (Blob storage) ======================= */
 const DB_NAME = "portfolio-db";
