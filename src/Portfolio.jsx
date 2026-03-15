@@ -135,15 +135,7 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Contact form
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState("");
+
 
   // Profile photo: start with defaultProfile; override with IDB if present
   const [profilePicUrl, setProfilePicUrl] = useState(defaultProfile);
@@ -204,38 +196,7 @@ const Portfolio = () => {
     setProfilePicUrl(defaultProfile); // fall back to bundled image
   }
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((p) => ({ ...p, [name]: value }));
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus("");
-
-    try {
-      const res = await fetch("http://localhost:4000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok || !data.ok) {
-        throw new Error(data?.message || "Failed to send");
-      }
-
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (err) {
-      console.error(err);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   // Scroll spy
   useEffect(() => {
