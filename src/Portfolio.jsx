@@ -284,7 +284,23 @@ const Portfolio = () => {
   ];
 
   const experiences = [
-    {
+   
+   
+{
+  title: "Student Business Analytics Developer",
+  company: "Halifax Regional Municipality (HRM)",
+  period: "Jan 2026 – Apr 2026",
+  description:
+    "Developed data-driven dashboards and analytics solutions to support city operations and infrastructure monitoring using Power BI and enterprise data sources.",
+  achievements: [
+    "Migrated legacy SAP BusinessObjects (BOBJ) reports to Power BI and Visual Studio reporting environments",
+    "Built operational dashboards for city infrastructure including sidewalk maintenance and closure monitoring",
+    "Integrated analytics using data from Excel, SQL Server, Oracle, and multiple municipal databases",
+    "Developed accessibility-focused dashboards for visually impaired users with enhanced readability and inclusive UI design",
+  ],
+},
+   
+   {
       title: "Software Engineer Intern – Developer",
       company: "VJMSOL",
       period: "July 2024 – July 2025",
@@ -973,26 +989,29 @@ const Portfolio = () => {
                             {index === 0 && (
                               <>
                                 <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 rounded-full text-xs font-medium">
-                                  React.js
+                                  Power BI
                                 </span>
                                 <span className="px-3 py-1 bg-gradient-to-r from-green-100 to-green-200 text-green-700 rounded-full text-xs font-medium">
-                                  AWS
+                                  Power Automate
                                 </span>
                                 <span className="px-3 py-1 bg-gradient-to-r from-purple-100 to-purple-200 text-purple-700 rounded-full text-xs font-medium">
-                                  Node.js
+                                  ETL
                                 </span>
                               </>
                             )}
                             {index === 1 && (
                               <>
                                 <span className="px-3 py-1 bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 rounded-full text-xs font-medium">
-                                  GitLab CI
+                                  React
                                 </span>
                                 <span className="px-3 py-1 bg-gradient-to-r from-indigo-100 to-indigo-200 text-indigo-700 rounded-full text-xs font-medium">
                                   Docker
                                 </span>
                                 <span className="px-3 py-1 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-700 rounded-full text-xs font-medium">
                                   Express.js
+                                </span>
+                                <span className="px-3 py-1 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-700 rounded-full text-xs font-medium">
+                                  Node.js
                                 </span>
                               </>
                             )}
@@ -2213,213 +2232,82 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 gap-12 max-w-3xl mx-auto">
             {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="text-center lg:text-left">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Let's Connect
-                </h3>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  Whether you have a project in mind, want to discuss
-                  opportunities, or just want to say hello, I'd love to hear
-                  from you. Feel free to reach out through any of the channels
-                  below or use the contact form.
-                </p>
-              </div>
+         <div className="max-w-xl mx-auto">
+  <div className="space-y-8 text-center">
+    <div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-6">
+        Let's Connect
+      </h3>
+      <p className="text-gray-600 mb-8 leading-relaxed">
+        Whether you have a project in mind, want to discuss opportunities,
+        or just want to say hello, I'd love to hear from you. Feel free to reach
+        out through any of the channels below or use the contact form.
+      </p>
+    </div>
 
-              <div className="space-y-6">
-                <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Email</h4>
-                    <a
-                      href="mailto:shanthan678@gmail.com"
-                      className="text-blue-600 hover:text-blue-800 transition-colors"
-                    >
-                      shanthan678@gmail.com
-                    </a>
-                  </div>
-                </div>
+    <div className="space-y-6">
+      <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+          <Mail className="w-6 h-6 text-white" />
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold text-gray-900">Email</h4>
+          <a
+            href="mailto:shanthan678@gmail.com"
+            className="text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            shanthan678@gmail.com
+          </a>
+        </div>
+      </div>
 
-                <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <a
-                      href="tel:+19024409840"
-                      className="text-green-600 hover:text-green-800 transition-colors"
-                    >
-                      +1 902 440 9840
-                    </a>
-                  </div>
-                </div>
+      <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4">
+          <Phone className="w-6 h-6 text-white" />
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold text-gray-900">Phone</h4>
+          <a
+            href="tel:+19024409840"
+            className="text-green-600 hover:text-green-800 transition-colors"
+          >
+            +1 902 440 9840
+          </a>
+        </div>
+      </div>
 
-               <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
-  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
-    <Linkedin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">LinkedIn</h4>
-                    <a
-                      href="https://linkedin.com/in/shanthan-reddy-nandhi-8bb862144"
-                      className="text-purple-600 hover:text-purple-800 transition-colors"
-                    >
-                      Connect with me
-                    </a>
-                  </div>
-                </div>
+      <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+          <Linkedin className="w-6 h-6 text-white" />
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold text-gray-900">LinkedIn</h4>
+          <a
+            href="https://linkedin.com/in/shanthan-reddy-nandhi-8bb862144"
+            className="text-purple-600 hover:text-purple-800 transition-colors"
+          >
+            Connect with me
+          </a>
+        </div>
+      </div>
 
-                <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Location</h4>
-                    <span className="text-indigo-600">
-                      Halifax, Nova Scotia, Canada
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Send Message
-              </h3>
-
-              {submitStatus === "success" && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-white text-xs">✓</span>
-                    </div>
-                    <p className="text-green-800 font-medium">
-                      Message sent successfully! I'll get back to you soon.
-                    </p>
-                  </div>
-                </div>
-              )}
-
-              {submitStatus === "error" && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-800 font-medium">
-                    Oops! Something went wrong. Please try again later.
-                  </p>
-                </div>
-              )}
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                    >
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
-                      placeholder="Your full name"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                    >
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
-                    placeholder="What's this about?"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none resize-none"
-                    placeholder="Tell me about your project or how I can help you..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none shadow-lg hover:shadow-xl"
-                >
-                  {isSubmitting ? (
-                    <span className="flex items-center justify-center">
-                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2"></div>
-                      Sending Message...
-                    </span>
-                  ) : (
-                    <span className="flex items-center justify-center">
-                      <Mail className="w-5 h-5 mr-2" />
-                      Send Message
-                    </span>
-                  )}
-                </button>
-              </form>
-
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-500 text-center">
-                  I typically respond within 24 hours. Looking forward to
-                  hearing from you!
-                </p>
-              </div>
-            </div>
+      <div className="flex items-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+        <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
+          <MapPin className="w-6 h-6 text-white" />
+        </div>
+        <div className="text-left">
+          <h4 className="font-semibold text-gray-900">Location</h4>
+          <span className="text-indigo-600">
+            Halifax, Nova Scotia, Canada
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
           </div>
         </div>
       </section>
